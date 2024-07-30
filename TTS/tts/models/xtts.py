@@ -750,7 +750,7 @@ class Xtts(BaseTTS):
                 del checkpoint[key]
 
         # Resize the weights and biases to match the current model
-        old_vocab_size = 6681
+        old_vocab_size = checkpoint['gpt.text_embedding.weight'].size(0)
         new_vocab_size = 7544
         self.resize_weights(checkpoint, old_vocab_size, new_vocab_size, "gpt.text_embedding.weight")
         self.resize_weights(checkpoint, old_vocab_size, new_vocab_size, "gpt.text_head.weight")
