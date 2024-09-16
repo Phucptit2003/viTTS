@@ -101,7 +101,7 @@ def format_audio_list(audio_files, target_language="en", out_path=None, buffer=0
             else:
                 sentence += word.word
 
-            if word.word[-1] in ["!", ".", "?"]:
+            if word.word[-1] in ["!", ".", "?"] or word_idx == len(words_list) - 1:
                 sentence = sentence[1:]
                 # Expand number and abbreviations plus normalization
                 sentence = multilingual_cleaners(sentence, target_language)
@@ -147,11 +147,12 @@ def format_audio_list(audio_files, target_language="en", out_path=None, buffer=0
 
     df_train = df_train.sort_values('audio_file')
     train_metadata_path = os.path.join(out_path, "metadata_train.csv")
-    df_train.to_csv(train_metadata_path, sep="|", index=False)
+    print('DF_TRAIN:', df_train)
+    df_train.to_csv(train_metadata_path, sep="|", index=False, encoding="utf-8")
 
     eval_metadata_path = os.path.join(out_path, "metadata_eval.csv")
     df_eval = df_eval.sort_values('audio_file')
-    df_eval.to_csv(eval_metadata_path, sep="|", index=False)
+    df_eval.to_csv(eval_metadata_path, sep="|", index=False, encoding="utf-8")
 
     # deallocate VRAM and RAM
     del asr_model, df_train, df_eval, df, metadata
