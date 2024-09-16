@@ -64,7 +64,7 @@ def train_gpt(language, num_epochs, batch_size, grad_acumm, train_csv, eval_csv,
 
     #XTTS_CHECKPOINT_LINK = "https://huggingface.co/capleaf/viXTTS/resolve/main/model.pth"
     #XTTS_CHECKPOINT_LINK = "https://coqui.gateway.scarf.sh/hf-coqui/XTTS-v2/main/model.pth"
-    XTTS_CHECKPOINT_LINK = "https://huggingface.co/mphuc02/fineTunningviXTTS/resolve/main/model.pth"
+    XTTS_CHECKPOINT_LINK = "https://huggingface.co/lephuc1105/TrainViTTS/blob/main/model.pth"
             
     XTTS_CONFIG_LINK = "https://huggingface.co/capleaf/viXTTS/resolve/main/config.json"
     #XTTS_CONFIG_LINK = "https://coqui.gateway.scarf.sh/hf-coqui/XTTS-v2/main/config.json"
