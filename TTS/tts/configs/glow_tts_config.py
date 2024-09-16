@@ -167,7 +167,7 @@ class GlowTTSConfig(BaseTTSConfig):
 
     # overrides
     min_seq_len: int = 3
-    max_seq_len: int = 500
+    max_seq_len: int = 2000
     r: int = 1  # DO NOT CHANGE - TODO: make this immutable once coqpit implements it.
 
     # testing

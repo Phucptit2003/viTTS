@@ -84,7 +84,7 @@ class CapacitronVAEConfig(Coqpit):
         """Check config fields"""
         c = asdict(self)
         super().check_values()
-        check_argument("capacitron_capacity", c, restricted=True, min_val=10, max_val=500)
+        check_argument("capacitron_capacity", c, restricted=True, min_val=10, max_val=2000)
         check_argument("capacitron_VAE_embedding_dim", c, restricted=True, min_val=16, max_val=1024)
         check_argument("capacitron_use_speaker_embedding", c, restricted=False)
         check_argument("capacitron_text_summary_embedding_dim", c, restricted=False, min_val=16, max_val=512)

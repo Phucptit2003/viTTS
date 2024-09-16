@@ -49,7 +49,7 @@ config = GlowTTSConfig(
     datasets=[dataset_config],
     use_speaker_embedding=True,
     min_text_len=0,
-    max_text_len=500,
+    max_text_len=2000,
     min_audio_len=0,
     max_audio_len=500000,
 )

@@ -84,7 +84,7 @@
     | > Max length sequence: 187
     | > Min length sequence: 5
     | > Avg length sequence: 98.3403500655409
-    | > Num. instances discarded by max-min (max=500, min=3) seq limits: 0
+    | > Num. instances discarded by max-min (max=2000, min=3) seq limits: 0
     | > Batch group size: 0.
 
     > TRAINING (2021-06-23 14:52:54)

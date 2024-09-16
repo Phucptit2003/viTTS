@@ -611,7 +611,7 @@ class Tortoise(BaseTTS):
         length_penalty=1,
         repetition_penalty=2.0,
         top_p=0.8,
-        max_mel_tokens=500,
+        max_mel_tokens=2000,
         # diffusion generation parameters follow
         diffusion_iterations=100,
         cond_free=True,

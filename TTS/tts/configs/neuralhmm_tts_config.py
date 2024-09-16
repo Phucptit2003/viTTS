@@ -94,7 +94,7 @@ class NeuralhmmTTSConfig(BaseTTSConfig):
 
     # Training and Checkpoint configs
     run_eval_steps: int = 100
-    save_step: int = 500
+    save_step: int = 2000
     plot_step: int = 1
     model_param_stats: bool = False
 
@@ -139,7 +139,7 @@ class NeuralhmmTTSConfig(BaseTTSConfig):
 
     # overrides
     min_text_len: int = 10
-    max_text_len: int = 500
+    max_text_len: int = 2000
     min_audio_len: int = 512
 
     # testing
